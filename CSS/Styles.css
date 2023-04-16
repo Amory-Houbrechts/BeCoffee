@@ -1,0 +1,586 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+section.HeaderSection{
+	background-image: url('http://127.0.0.1/BeDrink/Asset/Background/Home.jpg');
+	width: 100%;
+	height: calc(100vh - 50px);
+}
+
+section.HeaderSection h1{
+	color: #fff;
+	font-weight: bold;
+	font-size: 100px;
+	text-align: center;
+}
+
+section.HeaderSection p{
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+
+section.HeaderSection div{
+	text-align: center;
+}
+
+section.HeaderSection button{
+	width: 200px;
+	height: 50px;
+	border: none;
+	border-radius: 50px;
+	font-weight: bold;
+}
+
+section.HeaderSection button:nth-child(1){
+	background-color: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+}
+
+section.HeaderSection button:nth-child(1):hover{
+	background-color: #785d2e;
+	border-color: #785d2e;
+}
+
+section.HeaderSection button:nth-child(1){
+	background-color: #b89048;
+	border: 2px solid #b89048;
+	color: #fff;
+}
+
+section.HeaderSection div.Element{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+nav {
+  background-color: #785e2f;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 50px;
+  background-color: #785e2f;
+  padding: 0;
+  z-index: 99;
+}
+
+nav ul ul li {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 200px;
+}
+
+nav ul ul li a {
+  padding: 15px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+   color: #fff;
+}
+
+nav ul ul li a:hover {
+  background-color: #b89047;
+  color: #fff;
+}
+
+nav li span.badge {
+  background-color: #b89047;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  margin-left: 5px;
+}
+
+a{
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+.InputDelivery{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-group {
+	position: relative;
+	margin: 30px 0;
+	width: calc(50% - 20px);
+	margin: 10px;
+}
+
+.form-group label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.3s ease-out;
+	opacity: 0.5;
+}
+
+.form-group input {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	border: none;
+	border-bottom: 2px solid #785d2e;
+	background-color: transparent;
+	color: #333;
+	transition: all 0.3s ease-out;		
+}
+
+.form-group input:focus,
+.form-group input:valid {
+	outline: none;
+	border-bottom: 2px solid #b89048;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label {
+	top: -15px;
+	font-size: 14px;
+	opacity: 1;
+}
+
+section.Catalog{
+	width: 100%;
+	padding: 10px;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section.Catalog Article{
+	width: 250px;
+	height: 350px;
+	margin: 5px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(38,38,38,0.31);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(38,38,38,0.31);
+	box-shadow: 0px 0px 5px 2px rgba(38,38,38,0.31);
+}
+
+section.Catalog button{
+	width: 100%;
+}
+
+section.Catalog .Tags{
+	height: 30px;
+	display: flex;
+}
+
+section.Catalog .Image{
+	height: 150px;
+	width: auto;
+	text-align: center;
+}
+
+section.Catalog .Image img{	
+	height: 150px;	
+}
+
+.Tags div{
+	height: 20px;
+	background-color: grey;
+	font-size: 12px;
+	border-radius: 40px;
+	text-align: center;
+	color: #fff;
+	width: 70px;
+	margin-left: 2px;
+}
+
+.Tags div.New{
+	background-color: #fcb617;
+}
+
+.Tags div.Bestseller{
+	background-color: #53c86d;
+}
+
+section.Panier{
+	width: 100%;
+	display: flex;
+}
+
+article.Total table{
+	width: 100%	;
+}
+
+article.Buy {
+	text-align: right;
+}
+
+article.Buy button{
+	width: 100px;
+	text-align: center;
+	background-color: #785d2e;
+	color: #fff;
+	border: none;
+	font-weight: bold;
+	padding: 5px;
+}
+
+article.Buy button:hover{
+	background-color: #b89048;
+}
+
+main.Panier {
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section.Total button{
+	width: 100%;
+	text-align: center;
+	background-color: #785d2e;
+	color: #fff;
+	border: none;
+	font-weight: bold;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+section.Total button:hover{
+	background-color: #b89048;
+}
+
+div.Promo{
+	display: flex;
+
+}
+
+section.Total img{
+	height: 250px;
+}
+
+section.Product input[type="text"]{
+	width: calc(100% - 90px);
+}
+
+section.Product input[type="submit"]{
+	width: 90px;
+	display: block;
+	text-align: center;
+	background-color: #785d2e;
+	color: #fff;
+	border: none;
+	font-weight: bold;
+}
+
+section.Product{
+	background-color: #fff;
+	padding: 10px;
+}
+
+section.Product table img{
+	width: 100px;
+}
+
+section.Product table td:first-child{
+	width: 120px;
+}
+
+section.Product table{
+	width: 100%;
+}
+
+section.Product table tr{
+	border: 1px solid #EAEAEA;
+}
+
+section.Product table td:last-child{
+	width: 100px;
+}
+
+#Panier input[type="number"]{
+	width: 60px;
+	height: 30px;
+}
+
+
+main.Account{
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+  	flex-direction: row;
+  	justify-content: space-between;
+}
+
+main.Account section{
+	background-color: #fff;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+	margin: 15px;
+	min-width: calc((100% - 110px)/3);
+	min-height: 200px;
+	padding: 10px;
+}
+
+main.Account section.T1{
+	width: calc((100% - 110px)/3);
+	text-align: center;
+}
+
+main.Account section.T3{
+	width: 100%;
+}
+
+main.Account section.User img{
+	width: 100px;
+	height: 100px;
+	border-radius: 70%;
+}
+
+main.Account section.Points{
+	display: flex;
+	align-items: center;
+}
+
+main.Account section.Points h2{
+	font-size: 60px;
+}
+
+main.Account section.Points img{
+	height: 180px;
+}
+
+main.Account section.Title{
+	background-color: transparent;
+	box-shadow: none;
+}
+
+section.ConfirmMail{
+	text-align: center;
+	padding: 30px;
+}
+
+section.ConfirmMail img{
+	height: 70vh;
+}
+
+
+main.SendMail section{
+	text-align: center;
+}
+
+main.SendMail img{
+	height: calc(100vh - 50px);
+}
+
+main.SendMail h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: -1;
+	font-size: 30px;
+}
+
+main.ForRegister {
+	display: flex;
+	align-items: center;
+}
+section.Register{
+	width: 600px;
+}
+
+section.Register div.Info{
+	display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+}
+
+section.ImageCoffe{
+	background-image: url("../Asset/Background/Register.jpg");
+	background-size: auto 100%;
+	width: calc(100% - 600px);
+	height: 100vh;
+	color: #fff;
+	text-align: center;
+}
+
+section.ImageCoffe h1{
+	font-size: 100px;
+}
+
+section.Register{
+	padding: 20px;
+}
+
+main.ForRegister input[type="submit"]{
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	color: #fff;
+	background-color: #785d2e;
+	border: none;
+	font-weight: bold;
+	height: 40px;
+}
+
+main.ForRegister input[type="submit"]:hover{
+	background-color: #b89048;
+}
+
+main.Order{
+	padding: 20px;
+}
+
+section.ListOrder article{
+	border: 1px solid #292929;
+	border-radius: 5px;
+	max-width: 800px;
+	width: 100%;
+	margin: auto;
+}
+
+section.ListOrder table{
+	width: 100%;
+}
+
+section.ListOrder img{
+	width: 100px;
+}
+
+section.ListOrder header{
+	width: 100%;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EAEAEA;
+    border-bottom: 1px solid #292929;
+    padding: 5px;
+}
+
+section.ListOrder footer{
+	width: 100%;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color:  #f2f2f2;
+	padding: 5px;
+	border-top: 1px solid #292929;
+}
+
+section.OrderNumber{
+	width: 100%;
+	height: 80px;
+	background-color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+section.OrderInfo{
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section.OrderInfo div{
+	padding: 0;
+}
+
+section.OrderInfo article{
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+article.Folow img{
+	width: 60px;
+}
+
+article.Folow div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	margin-bottom: 20px;
+}
+
+article.Product table{
+	width: 100%;
+}
+
+article.Product table tr{
+	border: 1px solid #EAEAEA;
+}
+
+article.Product table img{
+	width: 50px;
+}
+
+article.Info table{
+	width: 100%;
+}
